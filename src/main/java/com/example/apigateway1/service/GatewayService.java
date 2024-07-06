@@ -22,7 +22,7 @@ public class GatewayService {
     private RestTemplate restTemplate;
 
     public byte[] sendToAuthorization(byte[] byteArray) {
-        String authorizationServiceUrl = "http://localhost:8082/api/authorization/authorize";
+        String authorizationServiceUrl = "https://authorization-5j80.onrender.com/api/authorization/authorize";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
